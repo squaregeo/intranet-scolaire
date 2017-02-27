@@ -27,7 +27,7 @@
       }
       echo "</select></div>";
       
-      echo " <div class=\"pure-controls\"> \n <button class=\"pure-button pure-button-primary\" type='submit'>Voir mes notes</button></div>";
+      echo " <div class=\"pure-controls\"> \n <button class=\"pure-button pure-button-primary\" type='submit'>Voir mes notes</button> \n </div>";
       
       echo "</form>";
       
@@ -46,6 +46,8 @@
         <th width="auto">Notes</th>
       </tr>
     </thead>
+    <tbody>
+
     <?php
       foreach($notes as $note) {
         echo "<tr>";
@@ -55,6 +57,8 @@
       }
     
     ?>
+    
+    </tbody>
     </table>
     
     <a href="notesEleves.php"><button>Retour</button></a>
