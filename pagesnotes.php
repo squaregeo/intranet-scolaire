@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Pages notes -        Super projet</title>
+		<title>Pages notes -  super projet</title>
 		<meta charset="binary">
 	</head>
 
@@ -10,9 +10,9 @@
 <body>
     <table border="2" width="auto">
         <tr>
-            <th width="auto">Elève
-            <th width="auto">Matière
-            <th width="auto">Notes
+            <th width="auto">Elève</th>
+            <th width="auto">Matière</th>
+            <th width="auto">Notes</th>
 	</tr>	    
         <tr>
             <td></td>
