@@ -61,7 +61,7 @@
     </tbody>
     </table>
     
-    <a href="notesEleves.php"><button>Retour</button></a>
+    <a href="notes.php"><button>Retour</button></a>
 
   </body>
 </html>
