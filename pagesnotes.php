@@ -13,6 +13,7 @@
             <th width="auto">Elève
             <th width="auto">Matière
             <th width="auto">Notes
+	</tr>	    
         <tr>
             <td></td>
             <td></td>
@@ -21,7 +22,7 @@
         <tr>
             <td></td>
             <td></td>
-		<td></td>
+	    <td></td>
 	</tr>	 
         <tr>
             <td></td>
@@ -29,6 +30,13 @@
             <td></td>
 	</tr>	 
     </table>
+		<video src="codecul.mp4" autoplay loop style="width: 450px; height:450px;"></video>
+			
+				<p>The page you're looking for could not be found.</p>
+				
+					<a href="Accueil.html" class="more go">Go back</a>
+				
+	
 </body>
 
 </html>
