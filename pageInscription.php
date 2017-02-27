@@ -33,7 +33,7 @@
     
       <form class="pure-form pure-form-stacked" method="post" onsubmit="return validate();">
         <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" placeholder="Exemple: Simpson" value="<?php echo $nom; ?>" />
+        <input type="text" id="nom" name="nom" placeholder="Exemple: Simpson" />
         <label for="prenom">Prénom</label>
         <input type="text" id="prenom"  name="prenom" placeholder="Exemple: Homer" />
         <label for="naissance">Naissance</label>
