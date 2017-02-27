@@ -2,17 +2,17 @@
 <html>
 	<head>
 		<title>Pages notes -        Super projet</title>
-		<meta charset="utf-8">
+		<meta charset="ascii">
 	</head>
 
 <p>page de notes</p>
 
 <body>
-    <table border="2" width="450">
+    <table border="2" width="auto">
         <tr>
-            <th width="310">Elève
-            <th width="140">Matière
-            <th width="140">Notes
+            <th width="auto">Elève
+            <th width="auto">Matière
+            <th width="auto">Notes
         <tr>
             <td>
             <td>
