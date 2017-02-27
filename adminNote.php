@@ -5,6 +5,12 @@ $sql = "select * from Eleves";
 $sth = $pdo->query($sql);
 $sth -> setFetchMode(PDO::FETCH_OBJ);
 ?>
+<?php
+if isset("formulaire"){
+$id = $_POST['select'];
+}
+?>
+<form name="formulaire" method="post">
 <select name="select">
 <?php
 foreach ($sth as $UnSth)
@@ -13,5 +19,9 @@ foreach ($sth as $UnSth)
 }
 ?>
 </select>
+<button type="submit">envoyer</button>
+</form>
+
+
 
 
