@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
 		<link rel="stylesheet" href="style.css" />
-    <meta charset="utf-8"></meta>
+    <meta charset="utf-8"/>
 	</head>
 	
 	<body>
@@ -13,8 +13,7 @@
     <div class="inscription-wrapper">
 
     <?php
-          $pdo_options[PDO::MYSQL_ATTR_INIT_COMMAND] = "SET NAMES utf8";
-          $pdo = new PDO('mysql:host=localhost;dbname=TPGit', 'root', '', $pdo_options);   
+          include('inc_dbconnexion.php') 
           
           if (isset($_POST['submit'])) {
             $nom = $_POST['nom'];
