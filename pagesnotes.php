@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Pages notes -        Super projet</title>
-		<meta charset="ascii">
+		<meta charset="binary">
 	</head>
 
 <p>page de notes</p>
