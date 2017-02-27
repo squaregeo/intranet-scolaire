@@ -32,9 +32,10 @@
     </table>
 		<video src="codecul.mp4" autoplay loop style="width: 450px; height:450px;"></video>
 			
+	<p>404</p><br/><br/>
 				<p>The page you're looking for could not be found.</p>
 				
-					<a href="Accueil.html" class="more go">Go back</a>
+					<a href="accueil.php" class="more go">Go back</a>
 				
 	
 </body>
