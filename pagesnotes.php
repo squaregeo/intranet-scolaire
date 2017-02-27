@@ -14,19 +14,19 @@
             <th width="auto">Matière
             <th width="auto">Notes
         <tr>
-            <td>
-            <td>
-            <td>
+            <td></td>
+            <td></td>
+            <td></td>
 	</tr>	    
         <tr>
-            <td>
-            <td>
-            <td>
+            <td></td>
+            <td></td>
+		<td></td>
 	</tr>	 
         <tr>
-            <td>
-            <td>
-            <td>
+            <td></td>
+            <td></td>
+            <td></td>
 	</tr>	 
     </table>
 </body>
