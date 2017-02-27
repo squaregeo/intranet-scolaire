@@ -16,20 +16,20 @@
         $naissance = $_POST['naissance'];
         $idClasse = $_POST['classe'];
         if (empty($nom)) {
-          echo "<h3>Vous devez entrer le nom de l'élève.</h3>";
+          echo "<h3 class=\"alert\">Vous devez entrer le nom de l'élève.</h3>";
           
         } else if (empty($prenom)) {
-          echo "<h3>Vous devez entrer le prénom de l'élève.</h3>";
+          echo "<h3 class=\"alert\">Vous devez entrer le prénom de l'élève.</h3>";
         } else {
           $pdo->query('INSERT INTO eleves (nom, prenom, naissance, idClasse) VALUES ("'.$nom.'", "'.$prenom.'", "'.$naissance.'", "'.$idClasse.'")');
         }
       }
 		?>
     
-    <form method="post">
-      <input type="text" name="nom" placeholder="Exemple: Simpson" value="<?php echo $nom; ?>" />
-      <input type="text" name="prenom" placeholder="Exemple: Homer" />
-      <input type="date" name="naissance" value="<?php echo date('Y-m-d'); ?>" />   
+    <form class="form__inscription" method="post">
+      <input class="input__inscription" type="text" name="nom" placeholder="Exemple: Simpson" value="<?php echo $nom; ?>" />
+      <input class="input__inscription" type="text" name="prenom" placeholder="Exemple: Homer" />
+      <input class="input__inscription" type="date" name="naissance" value="<?php echo date('Y-m-d'); ?>" />   
       <select name="classe">
         <?php
           foreach ($pdo->query("SELECT * FROM classes") as $row) {
@@ -37,7 +37,7 @@
           }
         ?>
       </select>  
-      <button type="submit" name="submit">Envoyez</button>
+      <button class="btn__inscription" type="submit" name="submit">Envoyez</button>
     </form>
 	</body>
 </html>
