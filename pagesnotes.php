@@ -13,6 +13,7 @@
             <th width="auto">Elève
             <th width="auto">Matière
             <th width="auto">Notes
+	</tr>	    
         <tr>
             <td></td>
             <td></td>
@@ -21,7 +22,7 @@
         <tr>
             <td></td>
             <td></td>
-		<td></td>
+	    <td></td>
 	</tr>	 
         <tr>
             <td></td>
