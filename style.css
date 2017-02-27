@@ -1,9 +1,27 @@
+@font-face
+{
+    font-family: 'raleway';
+    src: url('polices/raleway.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'learningcurvedashedpro_regular_macroman';
+    src: url('police/LearningCurve_OT-webfont.eot'),
+   			url('police/LearningCurveDashed_OT-webfont.ttf'),
+  			url('police/LearningCurveDashed_OT-webfont.svg'),
+   			url('police/LearningCurveDashed_OT-webfont.woff');
+}
+
 /*=============================================
 =            Style de Base            =
 =============================================*/
 
 body {
-    font: 300 16px/1 sans-serif;
+    font: 300 16px/1;
+    font-family: 'raleway', serif;
 }
 
 /*=====  End of Style de Base  ======*/
