@@ -1,4 +1,15 @@
 /*=============================================
+=            Style de Base            =
+=============================================*/
+
+body {
+    font: 300 16px/1 sans-serif;
+}
+
+/*=====  End of Style de Base  ======*/
+
+
+/*=============================================
 =            Page Accueil            =
 =============================================*/
 
@@ -12,7 +23,7 @@
 
 .inscription-wrapper .alert {
     border: 1px solid red;
-    background-color: rgba(255,025,025,0.3)
+    background-color: rgba(175,055,055,0.6)
     color: #fff;
 }
 
