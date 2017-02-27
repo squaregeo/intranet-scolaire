@@ -49,3 +49,12 @@ ALTER TABLE Eleves
 ALTER TABLE Notes
     ADD CONSTRAINT fk_Notes_idMatiere FOREIGN KEY (idMatiere) REFERENCES Matieres(id),
     ADD CONSTRAINT fk_Notes_idEleve FOREIGN KEY (idEleve) REFERENCES Eleves(id);
+
+--
+--  Liste des requêtes par page
+--
+
+---- adminNotes
+-- SELECT e.nom, prenom, naissance, c.nom as classe FROM Eleves e INNER JOIN Classes c ON c.id = e.idClasse WHERE e.id = :id;
+--
+-- SELECT nom as matiere, note FROM Notes n INNER JOIN matieres m ON m.id = n.idMatiere WHERE idEleve = :id;
