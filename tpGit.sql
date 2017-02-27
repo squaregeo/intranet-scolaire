@@ -54,7 +54,7 @@ ALTER TABLE Notes
 --  Liste des requêtes par page
 --
 
----- adminNotes
+-- adminNotes
 -- SELECT e.nom, prenom, naissance, c.nom as classe FROM Eleves e INNER JOIN Classes c ON c.id = e.idClasse WHERE e.id = :id;
 --
 -- SELECT nom as matiere, note FROM Notes n INNER JOIN matieres m ON m.id = n.idMatiere WHERE idEleve = :id;
