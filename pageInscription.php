@@ -31,22 +31,30 @@
         }
       ?>
     
-      <form class="pure-form pure-form-stacked" method="post" onsubmit="return validate();">
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" placeholder="Exemple: Simpson" />
+      <form class="pure-form  pure-form-aligned" method="post" onsubmit="return validate();">
+        <div class="pure-control-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Exemple: Simpson" />
+      </div>       
+      <div class="pure-control-group">
         <label for="prenom">Prénom</label>
         <input type="text" id="prenom"  name="prenom" placeholder="Exemple: Homer" />
+      </div>        
+      <div class="pure-control-group">
         <label for="naissance">Naissance</label>
         <input type="date" id="naissance" name="naissance" value="<?php echo date('Y-m-d'); ?>" />   
+      </div>
+      <div class="pure-control-group">
         <label for="classe">Classe</label>
         <select id="classe" name="classe">
-          <?php
-            foreach ($pdo->query("SELECT * FROM classes") as $row) {
-              echo "<option value='".$row['id']."'>".$row['nom']."</option>";
-            }
-          ?>
-        </select>  
-        <button class="pure-button pure-button-primary" type="submit" name="submit">Envoyez</button>
+    <?php
+      foreach ($pdo->query("SELECT * FROM classes") as $row) {
+        echo "<option value='".$row['id']."'>".$row['nom']."</option>";
+      }
+    ?>
+  </select>  
+  </div>
+          <button class="pure-button pure-button-primary" type="submit" name="submit">Envoyez</button>
       </form>
     </div>
   </body>
