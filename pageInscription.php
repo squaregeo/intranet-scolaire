@@ -31,26 +31,28 @@
         <div class="pure-control-group">
           <label for="nom">Nom</label>
           <input type="text" id="nom" name="nom" placeholder="Exemple: Simpson" />
-      </div>       
-      <div class="pure-control-group">
-        <label for="prenom">Prénom</label>
-        <input type="text" id="prenom"  name="prenom" placeholder="Exemple: Homer" />
-      </div>        
-      <div class="pure-control-group">
-        <label for="naissance">Naissance</label>
-        <input type="date" id="naissance" name="naissance" value="<?php echo date('Y-m-d'); ?>" />   
-      </div>
-      <div class="pure-control-group">
-        <label for="classe">Classe</label>
-        <select id="classe" name="classe">
-    <?php
-      foreach ($pdo->query("SELECT * FROM classes") as $row) {
-        echo "<option value='".$row['id']."'>".$row['nom']."</option>";
-      }
-    ?>
-  </select>  
-  </div>
+        </div>       
+        <div class="pure-control-group">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom"  name="prenom" placeholder="Exemple: Homer" />
+        </div>        
+        <div class="pure-control-group">
+          <label for="naissance">Naissance</label>
+          <input type="date" id="naissance" name="naissance" value="<?php echo date('Y-m-d'); ?>" />   
+        </div>
+        <div class="pure-control-group">
+          <label for="classe">Classe</label>
+          <select id="classe" name="classe">
+          <?php
+            foreach ($pdo->query("SELECT * FROM classes") as $row) {
+              echo "<option value='".$row['id']."'>".$row['nom']."</option>";
+            }
+          ?>
+          </select>  
+        </div>
+        <div class="pure-controls">
           <button class="pure-button pure-button-primary" type="submit" name="submit">Envoyez</button>
+        </div>
       </form>
     </div>
   </body>
