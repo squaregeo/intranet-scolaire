@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Pages notes -        Super projet</title>
-		<meta charset="utf-8">
+		<title>Pages notes -  super projet</title>
+		<meta charset="binary">
 	</head>
 
 <p>page de notes</p>
 
 <body>
-    <table border="2" width="450">
+    <table border="2" width="auto">
         <tr>
-            <th width="310">Elève
-            <th width="140">Matière
-            <th width="140">Notes
-        <tr>
-            <td>
-            <td>
-            <td>
+            <th width="auto">Elève</th>
+            <th width="auto">Matière</th>
+            <th width="auto">Notes</th>
 	</tr>	    
         <tr>
-            <td>
-            <td>
-            <td>
+            <td></td>
+            <td></td>
+            <td></td>
+	</tr>	    
+        <tr>
+            <td></td>
+            <td></td>
+	    <td></td>
 	</tr>	 
         <tr>
-            <td>
-            <td>
-            <td>
+            <td></td>
+            <td></td>
+            <td></td>
 	</tr>	 
     </table>
+		<video src="codecul.mp4" autoplay loop style="width: 450px; height:450px;"></video>
+			
+	<p>404</p><br/><br/>
+				<p>The page you're looking for could not be found.</p>
+				
+					<a href="accueil.php" class="more go">Go back</a>
+				
+	
 </body>
 
 </html>

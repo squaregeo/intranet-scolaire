@@ -9,45 +9,51 @@
 	</head>
 	
 	<body>
-
+    <script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="main.js"></script>
     <div class="inscription-wrapper">
-
-    <?php
-          include('inc_dbconnexion.php') 
-          
-          if (isset($_POST['submit'])) {
-            $nom = $_POST['nom'];
-            $prenom = $_POST['prenom'];
-            $naissance = $_POST['naissance'];
-            $idClasse = $_POST['classe'];
-            if (empty($nom)) {
-              echo "<h3 class=\"alert\">Vous devez entrer le nom de l'élève.</h3>";
-              
-            } else if (empty($prenom)) {
-              echo "<h3 class=\"alert\">Vous devez entrer le prénom de l'élève.</h3>";
-            } else {
-              $pdo->query('INSERT INTO eleves (nom, prenom, naissance, idClasse) VALUES ("'.$nom.'", "'.$prenom.'", "'.$naissance.'", "'.$idClasse.'")');
-            }
-          }
-    ?>
-        
-        <form class="pure-form pure-form-stacked" method="post">
+      <?php
+        include('inc_dbconnexion.php');
+      
+        if (isset($_POST['submit'])) {
+          $nom = $_POST['nom'];
+          $prenom = $_POST['prenom'];
+          $naissance = $_POST['naissance'];
+          $idClasse = $_POST['classe'];
+          $pdo->query('INSERT INTO eleves (nom, prenom, naissance, idClasse) VALUES ("'.$nom.'", "'.$prenom.'", "'.$naissance.'", "'.$idClasse.'")');
+          echo "<h3>Vous venez d'enregistrer l'élève ".$prenom." ".$nom.".</h3>";
+          echo "<a href='pageInscription.php'><button>Retour</button></a>";
+          return;
+        }
+      ?>
+    
+      <form class="pure-form  pure-form-aligned" method="post" onsubmit="return validate();">
+        <div class="pure-control-group">
           <label for="nom">Nom</label>
-          <input type="text" id="nom" name="nom" placeholder="Exemple: Simpson" value="<?php echo $nom; ?>" />
+          <input type="text" id="nom" name="nom" placeholder="Exemple: Simpson" />
+        </div>       
+        <div class="pure-control-group">
           <label for="prenom">Prénom</label>
           <input type="text" id="prenom"  name="prenom" placeholder="Exemple: Homer" />
+        </div>        
+        <div class="pure-control-group">
           <label for="naissance">Naissance</label>
           <input type="date" id="naissance" name="naissance" value="<?php echo date('Y-m-d'); ?>" />   
+        </div>
+        <div class="pure-control-group">
           <label for="classe">Classe</label>
           <select id="classe" name="classe">
-            <?php
-              foreach ($pdo->query("SELECT * FROM classes") as $row) {
-                echo "<option value='".$row['id']."'>".$row['nom']."</option>";
-              }
-            ?>
+          <?php
+            foreach ($pdo->query("SELECT * FROM classes") as $row) {
+              echo "<option value='".$row['id']."'>".$row['nom']."</option>";
+            }
+          ?>
           </select>  
+        </div>
+        <div class="pure-controls">
           <button class="pure-button pure-button-primary" type="submit" name="submit">Envoyez</button>
-        </form>
+        </div>
+      </form>
     </div>
   </body>
 </html>
