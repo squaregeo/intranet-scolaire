@@ -30,6 +30,7 @@
             <td></td>
 	</tr>	 
     </table>
+	<input type="button" value="Coucou" onclick="alert('Coucou tu veux voir ma ...')"> 
 </body>
 
 </html>
