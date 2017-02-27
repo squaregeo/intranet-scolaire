@@ -14,14 +14,16 @@
 	<p>Vous pouvez ici consulter vos notes</p>
 
 	<p>
-	<select>Veuilez-vous identifier<br/></select>
+	<select>Veuilez-vous identifier<br/>
+		<option value="null">Séléctionnez votre nom</option>
 		<?php foreach($reponse as $donnees) 
 		{?>
 			<option value="<?php $donnees['idEleve']; ?>"><?php echo $donnees["eleves"];?></option>	
 		<?php
 		}
 		?>
-
+	</select>
+	<input type="submit" name="Valider">
 
 		</p>
 		<?php $reponse->closeCursor(); ?>
