@@ -10,7 +10,7 @@
 		<div id="bloc_page">
 		 <?php include("includes/header.php");?>
 				<div id="slid"> 
-					<p><img src="img/mains_ecole.png" alt="image_ecole_header" height="250" width="1200"></p>
+					<p><img src="img/img_header.jpg" alt="image_ecole_header" height="250" width="1200"></p>
 				</div>
 					
 				<section>
