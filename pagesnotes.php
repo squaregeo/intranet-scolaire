@@ -5,38 +5,36 @@
 		<meta charset="utf-8">
 	</head>
 
-	<body>
+<p>page de note</p>
 
-	<p>page de note</p>
-
-	<BODY>
-    <TABLE border="2" width="450">
-        <TR>
-            <TH width="310">Eleve
-            <TH width="140">Matière
-            <TH width="140">Note
-        <TR>
-            <TD>
-            <TD>
-            <TD>
-            <TD>
-            <TD>
-            <TD>
-        <TR>
-            <TD>
-            <TD>
-            <TD>
-            <TD>
-            <TD>
-            <TD>
-        <TR>
-            <TD>
-            <TD>
-            <TD>
-            <TD>
-            <TD>
-            <TD>
-    </TABLE>
-	</body>
+<body>
+    <table border="2" width="450">
+        <tr>
+            <th width="310">Eleve
+            <th width="140">Matière
+            <th width="140">Note
+        <tr>
+            <td>
+            <td>
+            <td>
+            <td>
+            <td>
+            <td>
+        <tr>
+            <td>
+            <td>
+            <td>
+            <td>
+            <td>
+            <td>
+        <tr>
+            <td>
+            <td>
+            <td>
+            <td>
+            <td>
+            <td>
+    </table>
+</body>
 
 </html>
