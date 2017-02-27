@@ -18,16 +18,16 @@
       $request->execute();
       $row = $request->fetchAll();
       
-      echo "<form method='get'>";
+      echo "<form class=\"pure-form  pure-form-aligned\" method='get'>";
       
       
-      echo "<select name='id'>";
+      echo "<div class=\"pure-control-group\"> \n <select name='id'>";
       foreach($row as $eleve) {
         echo "<option value='".$eleve['id']."'>".$eleve['nom']." ".$eleve['prenom']."</option>";
       }
-      echo "</select>";
+      echo "</select></div>";
       
-      echo "<button type='submit'>Voir mes notes</button>";
+      echo " <div class=\"pure-controls\"> \n <button class=\"pure-button pure-button-primary\" type='submit'>Voir mes notes</button></div>";
       
       echo "</form>";
       
@@ -39,11 +39,13 @@
     $notes = $request->fetchAll();
   
   ?>
-  <table border="2" width="auto">
-    <tr>
-      <th width="auto">Matière</th>
-      <th width="auto">Notes</th>
-    </tr>
+  <table class="pure-table pure-table-horizontal" border="2" width="auto">
+    <thead>
+      <tr>
+        <th width="auto">Matière</th>
+        <th width="auto">Notes</th>
+      </tr>
+    </thead>
     <?php
       foreach($notes as $note) {
         echo "<tr>";
