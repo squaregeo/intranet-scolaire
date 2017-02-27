@@ -9,7 +9,8 @@
 
 <body>
 
-		<video src="codecul.mp4" autoplay loop style="width: 450px; height:450px;"></video>
+		<video src="codecul.mp4" autoplay loop style="width: 450px; height:450px;margin-left:auto;
+  margin-right:auto;"></video>
 			
 	<p>404</p><br/><br/>
 				<p>The page you're looking for could not be found.</p>
