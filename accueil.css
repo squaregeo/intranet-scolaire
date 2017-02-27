@@ -1,0 +1,212 @@
+/*=============================================
+=            Page Accueil            =
+=============================================*/
+
+@font-face
+{
+    font-family: 'raleway';
+    src: url('polices/raleway.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'learningcurvedashedpro_regular_macroman';
+    src: url('police/LearningCurve_OT-webfont.eot'),
+   			url('police/LearningCurveDashed_OT-webfont.ttf'),
+  			url('police/LearningCurveDashed_OT-webfont.svg'),
+   			url('police/LearningCurveDashed_OT-webfont.woff');
+}
+
+/******************************************************************* BODY **********/
+
+body{
+margin: 0px;
+padding: 0px;
+font-family: 'raleway', arial, sans-serif;
+}
+
+p img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#haut{
+	margin-left:40px;
+	margin-right:40px;
+}
+
+#haut p img {
+	position: relative;
+    width: 300px;
+    height: 160px;
+}
+
+#bloc_page{
+	width: 1280px;
+    margin: auto;
+	padding-bottom: 20px;
+	border: 2px solid #F2F4F4;
+	filter:progid:DXImageTransform.Microsoft.Glow(Color=#c0c0c0,Strength=8);
+  	box-shadow: 1px 1px 8px #555;
+}
+
+/********************************************************************** HEADER **********/
+
+header{
+	height:30px;
+	padding-bottom: 20px
+	padding-top:20px;
+	margin-top:20px;
+	margin-bottom:10px;
+	text-decoration: none;
+	font-family: 'raleway', calibri, sans-serif, bold;
+	margin-left:40px;
+	margin-right:40px;
+	background-color: #f5f5f0;
+}
+
+header ul {
+	margin-right:230px;
+	margin-left:230px;
+	padding-left:5px; 
+	padding-right:5px;
+	list-style-type: none;
+    display: flex;
+    align-content: center;
+}
+
+header ul li {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+header ul li a {
+	font-size: 22px;
+    color: #2db405;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color:#FF5733;
+}
+
+#slid p img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 12px #555;
+}
+
+
+/*************************************************************************** CONTENU **********/
+
+section {
+	background-color:#f5f5f0; 
+	margin-left:40px;
+	margin-right:40px;
+	width: auto;
+	height: 600px;
+}
+
+/*************************************************************************** FOOTER **********/
+
+footer{
+	border:1px solid #ff004c;
+	display: flex;
+	height:auto;
+	margin-left:40px;
+	margin-right:40px;
+	padding-bottom: 20px
+	padding-top:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-family: 'raleway', calibri, sans-serif;
+	color:#ff004c;
+	text-decoration:none;
+}
+
+footer h1 {
+	font-size:25px;
+	color:#ccd542;
+}
+
+footer ul em {
+	color:#ccd542;
+}
+
+
+/*************************************************************************** FOOTER+info **********/
+
+#info {
+	flex:0.8;
+	text-align: center;
+	color:#ffffff;
+	background-color:#ff004c;
+}
+
+#info #horaire {
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+	text-decoration: none;
+	list-style:none;
+}
+
+#info #horaire li {
+	margin-right: 25px;
+}
+
+#contact {
+	flex:1;
+	color:#FF5733;
+}
+
+#map p {
+	padding-top:20px;
+	padding-right: 25px;
+	flex:1;
+}
+
+/*=====  End of Page Accueil  ======*/
+
+/*=============================================
+=            Page inscription            =
+=============================================*/
+
+.inscription-wrapper .alert {
+    border: 1px solid red;
+    background-color: rgba(255,025,025,0.3)
+    color: #fff;
+}
+
+/*=====  End of Page inscription  ======*/
+
+/*=============================================
+=            Ajout notes            =
+=============================================*/
+
+
+
+/*=====  End of Ajout notes  ======*/
+
+
+
+/*=============================================
+=            Page consultation            =
+=============================================*/
+
+
+
+/*=====  End of Page consultation  ======*/
+
+
+/*=============================================
+=            Page admin            =
+=============================================*/
+
+
+
+/*=====  End of Page admin  ======*/
