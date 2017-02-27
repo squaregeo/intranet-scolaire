@@ -21,10 +21,10 @@
             $naissance = $_POST['naissance'];
             $idClasse = $_POST['classe'];
             if (empty($nom)) {
-              echo "<h3 class=\"alert\">Vous devez entrer le nom de l'élève.</h3>";
+              echo "<h3>Vous devez entrer le nom de l'élève.</h3>";
               
             } else if (empty($prenom)) {
-              echo "<h3 class=\"alert\">Vous devez entrer le prénom de l'élève.</h3>";
+              echo "<h3>Vous devez entrer le prénom de l'élève.</h3>";
             } else {
               $pdo->query('INSERT INTO eleves (nom, prenom, naissance, idClasse) VALUES ("'.$nom.'", "'.$prenom.'", "'.$naissance.'", "'.$idClasse.'")');
             }
