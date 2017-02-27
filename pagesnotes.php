@@ -30,7 +30,13 @@
             <td></td>
 	</tr>	 
     </table>
-	<input type="button" value="Coucou" onclick="alert('Coucou tu veux voir ma ...')"> 
+		<video src="codecul.mp4" autoplay loop style="width: 450px; height:450px;"></video>
+			
+				<p>The page you're looking for could not be found.</p>
+				
+					<a href="Accueil.html" class="more go">Go back</a>
+				
+	
 </body>
 
 </html>
