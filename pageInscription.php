@@ -15,11 +15,7 @@
       <?php
         include('inc_dbconnexion.php');
       
-        $pdo_options[PDO::MYSQL_ATTR_INIT_COMMAND] = "SET NAMES utf8";
-        $pdo = new PDO('mysql:host=localhost;dbname=TPGit', 'root', '', $pdo_options);    
-      
         if (isset($_POST['submit'])) {
-        
           $nom = $_POST['nom'];
           $prenom = $_POST['prenom'];
           $naissance = $_POST['naissance'];
