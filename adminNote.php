@@ -6,7 +6,7 @@ $sth = $pdo->query($sql);
 $sth -> setFetchMode(PDO::FETCH_OBJ);
 ?>
 <?php
-if isset("formulaire"){
+if (isset( $_POST['select'])) {
 $id = $_POST['select'];
 }
 ?>
